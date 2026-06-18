@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaFlow Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+        
+        <header class="app-header">
+            <button class="icon-btn action-btn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="header-title-container">
+                <h1 class="app-title">AquaFlow</h1>
+                <p class="app-subtitle">Water Supply System</p>
+            </div>
+            <button class="icon-btn action-btn notification-btn" aria-label="Notifications">
+                <i class="fa-solid fa-bell"></i>
+                <span class="notification-dot"></span>
+            </button>
+        </header>
+
+        <main class="main-content">
+            <h2 class="section-title">Dashboard</h2>
+
+            <section class="metrics-grid">
+                <div class="metric-card action-btn">
+                    <div class="metric-icon-wrapper produced-icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div class="metric-info">
+                        <span class="metric-label">Produced</span>
+                        <div class="metric-value">124.8 <span class="metric-unit">ML</span></div>
+                        <span class="metric-trend trend-neutral"><i class="fa-solid fa-arrow-up"></i> 8.5%</span>
+                    </div>
+                </div>
+
+                <div class="metric-card action-btn">
+                    <div class="metric-icon-wrapper stored-icon">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="metric-info">
+                        <span class="metric-label">Stored</span>
+                        <div class="metric-value">342.6 <span class="metric-unit">ML</span></div>
+                        <span class="metric-trend trend-up"><i class="fa-solid fa-arrow-up"></i> 8.5%</span>
+                    </div>
+                </div>
+
+                <div class="metric-card action-btn">
+                    <div class="metric-icon-wrapper consumer-icon">
+                        <i class="fa-solid fa-user-circle"></i>
+                    </div>
+                    <div class="metric-info">
+                        <span class="metric-label">Consumer</span>
+                        <div class="metric-value">28,543</div>
+                        <span class="metric-trend trend-up"><i class="fa-solid fa-arrow-up"></i> 2.1%</span>
+                    </div>
+                </div>
+
+                <div class="metric-card action-btn">
+                    <div class="metric-icon-wrapper alerts-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="metric-info">
+                        <span class="metric-label">Alerts</span>
+                        <div class="metric-value text-dark">3</div>
+                        <span class="view-all-link">View all</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="swipe-viewport">
+                
+                <div id="slide-overview" class="swipe-slide">
+                    <h3 class="panel-title">System Overview</h3>
+                    <div class="media-container">
+                        <img src="c:\Users\Acer Aspire 3\Pictures\Screenshots\Screenshot 2026-06-18 151444.png" alt="System Overview Map">
+                    </div>
+                </div>
+
+                <div id="slide-production" class="swipe-slide">
+                    <h3 class="panel-title">Water Production</h3>
+                    <div class="media-container">
+                        <img src="c:\Users\Acer Aspire 3\Pictures\Screenshots\Screenshot 2026-06-14 125256.png" alt="Water Production Chart">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <div class="switch-control-pill">
+                <a href="#slide-overview" class="pill-trigger" aria-label="Go to System Overview"></a>
+                <a href="#slide-production" class="pill-trigger" aria-label="Go to Water Production"></a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
